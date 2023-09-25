@@ -1,5 +1,6 @@
 import { getGifs } from "../../src/helpers/getGifs";
 describe('prueba en getGifs', () => { 
+  
   test('debes de retornar un arreglo de gifs', async() => {
     const gifs = await getGifs('One Punch');
     expect(gifs.length).toBeGreaterThan(0);
@@ -9,4 +10,5 @@ describe('prueba en getGifs', () => {
       url   :expect.any(String),
     })
   })
+  
 })
